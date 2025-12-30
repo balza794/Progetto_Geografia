@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>GeoChalleng</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Progetto_geografia_MB/style.css">
 </head>
 <body>
+
     <style>
         body {
-            zoom: 155%; /* Ingrandisce tutto al 155% */
+            zoom: 155%;
         }
     </style>
 
     <h1>🌍 GeoChalleng</h1>
-    <img src="Progetto_geografia_MB/img/Cartina1.jpg">
+
+    <img src="Progetto_geografia_MB/img/Cartina1.jpg" alt="Cartina">
+
     <div id="setup">
         <label>Numero di turni:</label>
         <input type="number" id="turniInput" min="1" max="20" value="5">
@@ -23,15 +26,16 @@
     <div id="quiz" class="hidden">
         <p id="turno"></p>
         <p id="domanda"></p>
-        <img id="immagineCarta" class="hidden" alt="Carta geografica">
+        <img id="immagineCarta" class="hidden">
         <input type="text" id="rispostaInput">
-        <button id="rispondiBtn" onclick="rispondi()">Rispondi</button>
-        <button id="avantiBtn" onclick="prossimaDomanda()" class="hidden">Avanti ➡️</button>
+        <button onclick="rispondi()">Rispondi</button>
+        <button onclick="prossimaDomanda()" class="hidden">Avanti ➡️</button>
         <p id="feedback"></p>
     </div>
 
     <p id="punteggio"></p>
 
-    <script src="script.js"></script>
+    <script src="Progetto_geografia_MB/script.js"></script>
 </body>
 </html>
+
